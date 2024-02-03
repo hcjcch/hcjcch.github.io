@@ -40,19 +40,22 @@
         } */
 
         img {
-            width: 50%;
-            height: 50%;
+            width: 40%;
+            height: 40%;
             object-fit: contain;
-            transform: rotate(30deg);
-            position: absolute;
+            transform: rotate(20deg);
+            position: fixed;
             z-index: -100;
+            right: -5%;
+            margin-top: 40px;
+            margin-right: 20px;
         }
     </style>
 
 </head>
 
 <body>
-    <img src="1.jpg" id="ruru">
+    <img src="2.jpg" id="ruru">
     <h1 id="h1"></h1>
     <canvas></canvas> <!--canvas 画布-->
 
@@ -169,19 +172,19 @@
         }
 
 
-        var imageUrls = ['image1.jpg', 'image2.jpg', 'image3.jpg']; // 这里是你的图片 URL
+        // var imageUrls = ['image1.jpg', 'image2.jpg', 'image3.jpg']; // 这里是你的图片 URL
 
-        function showRandomImage() {
-            var imageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)]; // 从数组中随机选择一个图片 URL
+        // function showRandomImage() {
+        //     var imageUrl = imageUrls[Math.floor(Math.random() * imageUrls.length)]; // 从数组中随机选择一个图片 URL
 
-            var img = document.getElementById('ruru');
+        //     var img = document.getElementById('ruru');
 
-            setTimeout(function () {
-                img.remove(); // 在一段时间后删除图片
-            }, 3000);
-        }
+        //     setTimeout(function () {
+        //         img.remove(); // 在一段时间后删除图片
+        //     }, 3000);
+        // }
 
-        setInterval(showRandomImage, 1000); // 每隔一秒钟显示一个新的随机图片
+        // setInterval(showRandomImage, 1000); // 每隔一秒钟显示一个新的随机图片
 
     </script>
 </body>
